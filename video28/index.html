@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        :root{
+            /* global variable */
+            --color:rgb(218, 212, 210);
+            --seccolor:rgb(152, 122, 252);
+            --defpad:24px;
+            --defop:0.7;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+
+        }
+        ul li{
+            /* background-color: var(--seccolor); */
+            opacity: var(--defop);
+            padding: var(--defpad);
+            border: 12px solid var(--seccolor);
+            
+        }
+        img{
+            margin:auto;
+            display: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div>
+        <img src="image.png" alt="pet">
+    </div>
+    <!-- nav bar design and make style sheet and make global variable i.e, multicolor nav bar  -->
+    <!-- which is shown in the css variable video in video 30  -->
+</body>
+
+</html>

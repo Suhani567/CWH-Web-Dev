@@ -1,0 +1,1 @@
+// In the previous question, use console.error to log the error if the age entered is negative

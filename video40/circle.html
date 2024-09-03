@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate a circle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+        .circle {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(90deg, yellow ,red);
+            animation: square-to-c 3s 1s infinite alternate;
+        }
+
+
+
+        @keyframes square-to-c {
+            0% {
+                background: linear-gradient(90deg, rgb(66, 230, 173), pink);
+                border-radius: 0%;
+                rotation:0deg;
+            }
+
+            25% {
+                background: linear-gradient(90deg, rgb(209, 163, 93), rgb(234, 98, 121));
+                border-radius: 50% 0% 0% 0%;
+                transform: rotate(0deg);
+            }
+
+            50% {
+                background: linear-gradient(90deg, rgb(185, 119, 209), pink);
+                border-radius: 50% 50% 0% 0%;
+                transform:rotate(45deg);
+                
+            }
+            75%{
+                background: linear-gradient(90deg, rgb(209, 119, 203), pink);
+                border-radius: 50% 50% 50% 0%;
+                transform: rotate(135deg);
+                
+            }
+
+            100% {
+                background: linear-gradient(90deg, rgb(225, 178, 84), rgb(222, 119, 136));
+                border-radius: 50%;
+                transform: rotate(100deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+       
+    </div>
+</body>
+
+</html>

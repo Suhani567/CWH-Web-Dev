@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-tourism</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #e6d7b4 ;
+            border: 100px solid #d4ccaf;
+        
+        }
+
+        .image img {
+            padding: 34px;
+            border-radius: 80px;
+            max-width: 100%;
+            width: 800px;
+
+        }
+        .image{
+            text-align: center;
+            padding: 2px;
+        }
+        .tags{
+            text-align: center;
+            margin: 20px ;
+        }
+
+        .tags span {
+            display: inline-block;
+            border: 2px solid rgb(149, 142, 142);
+            background-color: rgb(209, 203, 203);
+            border-radius: 34px;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: rgb(56, 52, 52);
+            text-align: center;
+            margin: 20px;
+
+        }
+
+        h2 {
+            padding: 3px;
+            color: rgb(105, 102, 98);
+            margin: 20px;
+            line-height:1.6;
+            
+        }
+
+        .content {
+            font-size: 20px;
+            color: rgb(45, 44, 44);
+            margin: 20px;
+           
+            /* text-align: left; */
+        }
+        details{
+            background-color: #bc9e6c;
+            border: 2px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin:23px;
+        }
+        details summary{
+            font-size: 18px;
+            cursor: pointer;
+            outline:none;
+            /* margin: 20px; */
+            /* padding: 20px; */
+        }
+        details p{
+            margin-top: 10px;
+            line-height: 1.6;
+            margin: 120px;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="image">
+        <!-- card.png is a file which contains a card image. write a hml and css code to design  this card.-->
+        <img src="image.png" alt="nature" width="600px">
+    </div>
+    <div class="tags">
+        <span> Nature</span>
+        <span> Monument</span>
+    </div>
+
+    <div>
+        <h1>Jal Mahal~ Jaipur</h1>
+    </div>
+    <div>
+        <h2>The Jal Mahal Palace is an architectural showcase of the Rajput style of architecture (common in Rajasthan)
+            on a
+            grand scale. The building has a picturesque view of Man Sagar Lake, but owing to its seclusion from land is
+            equally the focus of a viewpoint from the Man Sagar Dam on the eastern side of the lake in front of the
+            backdrop
+            of the surrounding Nahargarh ("tiger-abode") hills. The palace, built with local sandstone, is a
+            three-storied
+            building, with the third floor only existing on the eastern side of the palace. The eastern side is not
+            visible
+            from the road side public promenade, which is the Western side of the palace. The additional lower levels of
+            the
+            eastern side remain underwater when the lake is full. The Jal Mahal has a terrace floor with a garden, and
+            the
+            garden has four Tibaris facing north, south, east and west. The Tibaris are designed in the Bengal roof
+            style
+            architecture while the four octagonal Chhatri on the roof mark the corners of the monument. The palace had
+            suffered subsidence in the past and also partial seepage (plaster work and wall damage equivalent to rising
+            damp) because of water logging, which have been repaired under a restoration project of the Government of
+            Rajasthan.[1]....</h2>
+    </div>
+    <div class="content">
+
+        <details>
+            <summary>Read More</summary>
+            <p>LOCATED IN THE MIDDLE OF the Man Sagar Lake, a man-made reservoir created in 1596, the Jal Mahal (or
+                “Water Palace”) only appears to be one story high, although there are four more levels to the building
+                hidden beneath the water.
+
+                Although the name translates to “Water Palace,” the building was never intended to be a palace, as such,
+                but was instead conceived as a hunting lodge for the local Raja (King). In the 16th-century, a severe
+                drought spurred the locals to create a dam, creating the lake that submerged the lower portions of the
+                lodge.</p>
+        </details>
+        <!-- <div>
+    <button id="'myBtn" onclick="toggleReadMore()"> Read more</button>
+</div> -->
+    </div>
+
+</body>
+
+</html>

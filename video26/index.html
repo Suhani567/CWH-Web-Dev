@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root {
+            /* global variable */
+            --color: rgb(179, 36, 159);
+            --seccolor: rgb(231, 156, 206);
+            --defpad: 23px;
+            --defop: 0.8;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style-type: none;
+            padding: var(--defpad);
+            border: 12px solid var(--seccolor);
+            opacity: var(--defop);
+        }
+
+        ul li:first-child {
+            --color: rgb(228, 248, 113);
+            /*local variable */
+            background-color: var(--color, blue);
+        }
+
+        .container {
+            background-color: var(--seccolor)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sunt. Eligendi officia tenetur eaque
+        explicabo velit, qui eius. Rerum doloremque odio, facilis pariatur magni quam? Eos, voluptate corrupti? Eos,
+        ducimus cum corporis reprehenderit soluta quaerat sunt cumque cupiditate maiores vitae sint provident modi nobis
+        architecto.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati reprehenderit ducimus consectetur
+        voluptate cumque corporis consequatur vitae temporibus quisquam voluptatem odio debitis laudantium expedita
+        voluptatibus repudiandae ab laboriosam? Optio aperiam accusantium incidunt necessitatibus odit quos quas dolorem
+        commodi eaque eveniet molestiae perspiciatis, vel, porro quisquam, atque sequi! Ullam placeat temporibus enim
+        quasi et consectetur unde voluptate fugit fugiat error ipsam esse consequuntur illum voluptatum voluptatibus
+        iusto deserunt ipsa suscipit iste autem mollitia magni, quaerat expedita laudantium. Est neque facilis nemo
+        adipisci. Tenetur vel placeat amet, ipsum ducimus cum atque labore repellendus, voluptate et facere perferendis
+        ipsam, reprehenderit optio quos aliquid sit animi. Quas natus atque eos molestias pariatur. Repellat aspernatur
+        facere commodi eum doloremque? Rerum accusantium a exercitationem officia, quasi reprehenderit vitae, eaque
+        porro harum officiis perspiciatis quis illum tenetur voluptatem corporis dolor saepe nemo perferendis cumque
+        suscipit animi obcaecati expedita soluta sint. Nulla ad earum sit at doloremque numquam eum laborum est
+        temporibus, dicta voluptates molestiae maiores dolore nemo impedit minus hic. Dolor facilis deleniti aliquid
+        amet iste, totam aliquam quae est distinctio iure necessitatibus iusto ut odit alias ipsa obcaecati cupiditate
+        quam velit nostrum pariatur incidunt veritatis dicta! Dolore rerum, quas harum reprehenderit quidem laboriosam
+        est inventore suscipit magnam nihil alias sunt minus. Sint quo explicabo in dicta dolorum officiis, cupiditate
+        quasi. Atque quisquam ad reiciendis blanditiis reprehenderit vero. Labore rerum quisquam modi nemo illum est
+        quis adipisci accusamus incidunt quidem?
+
+    </div>
+</body>
+
+</html>

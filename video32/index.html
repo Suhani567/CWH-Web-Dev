@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column;
+                    } */
+            /* align-content: flex-start; */
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            gap: 30px;
+            /* row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 10px;
+            /* row and column are defined here */
+            /* there is no justify-items in flexbox */
+        }
+
+        .item {
+            height: 92px;
+            width: 92px;
+            background-color: aqua;
+            border: 2px solid black;
+            /* margin: 4px; */
+
+            /* display: flex; */
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+        .item1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            align-self: flex-end;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+
+        </div>
+    </main>
+</body>
+
+</html>
